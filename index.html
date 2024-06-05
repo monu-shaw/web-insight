@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple shopping list app built with vanilla JavaScript and CSS. It allows users to add items to a list, mark items as completed, and remove items from the list. The list items are stored in the browser's localStorage, so they persist even after refreshing or closing the page."
+    />
+    <meta name="author" content="Monu Shaw" />
+    <meta name="keywords" content="shopping list, app, javascript, css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping List App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:title" content="Shopping List App" />
+    <meta
+      property="og:description"
+      content="A simple shopping list app built with vanilla JavaScript and CSS. It allows users to add items to a list, mark items as completed, and remove items from the list. The list items are stored in the browser's localStorage, so they persist even after refreshing or closing the page."
+    />
+    <meta property="og:image" content="https://cdn.salesklik.com/store/f608d0a7-0b9f-4215-93c6-818c7710c408/1000012023-104590.jpg" />
+    <meta property="og:url" content="https://healthy-similarly-pony.ngrok-free.app/" />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Shopping List</h1>
+      </header>
+      <main>
+        <div class="input-container">
+          <input
+            type="text"
+            id="item-input"
+            placeholder="Enter an item"
+            aria-label="Enter an item"
+          />
+          <button id="add-btn" aria-label="Add item">
+            <span class="add-icon">&#43;</span>
+          </button>
+        </div>
+        <ul id="item-list" aria-live="polite" role="list"></ul>
+      </main>
+    </div>
+    <footer>
+      <p>
+        Developed by Mobu Shaw for GCCD Kolkata 2024 Extended Contest
+      </p>
+    </footer>
+    <script src="app.js" defer></script>
+  </body>
+</html>
